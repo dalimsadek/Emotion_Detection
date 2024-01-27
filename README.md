@@ -34,3 +34,15 @@ The project structure is organized into the following folders:
 3. Run the main script:
    ```bash
     python main.py
+
+## Contributing
+If you're interested in contributing to the project or have suggestions, feel free to create issues or submit pull requests.
+
+## Contact
+or inquiries or further information, please contact me:
+
+Maintainer: [Mohamed Ali Msadek] (Mohamedali.msadek@supcom.tn)
+
+
+
+
