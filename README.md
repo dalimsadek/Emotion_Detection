@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project focuses on Emotion Recognition using a Convolutional Neural Network (CNN) architecture with four layers. The system is designed to analyze facial expressions and determine the emotion portrayed in the face.
+This project focuses on Emotion Recognition using a Convolutional Neural Network (CNN) architecture . The system is designed to analyze facial expressions and determine the emotion portrayed in the face.
 
 
 ![CNN Architecture](architecture.png)
