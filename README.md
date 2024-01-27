@@ -37,7 +37,6 @@ The project structure is organized into the following folders:
 
 4. Run the necessary scripts according to your needs:
      ```bash
-    python dependecies.py
     python split_data.py
     python train.py
     python test.py
