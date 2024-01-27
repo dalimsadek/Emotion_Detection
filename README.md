@@ -39,7 +39,7 @@ The project structure is organized into the following folders:
 If you're interested in contributing to the project or have suggestions, feel free to create issues or submit pull requests.
 
 ## Contact
-or inquiries or further information, please contact me:
+For inquiries or further information, please contact me:
 
 Maintainer: [Mohamed Ali Msadek] (Mohamedali.msadek@supcom.tn)
 
