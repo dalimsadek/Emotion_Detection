@@ -1,4 +1,7 @@
-from dependencies import *
+from keras.callbacks import ModelCheckpoint, EarlyStopping, ReduceLROnPlateau
+import split_data as sp
+import model 
+from keras.optimizers import Adam,SGD,RMSprop
 
 
 
@@ -24,15 +27,15 @@ if __name__=="__main__":
 
     epochs = 48
 
-    model.compile(loss='categorical_crossentropy',
+    model.model.compile(loss='categorical_crossentropy',
                 optimizer = Adam(lr=0.001),
                 metrics=['accuracy'])
 
 
-    history = model.fit_generator(generator=train_set,
-                                    steps_per_epoch=train_set.n//train_set.batch_size,
+    history = model.model.fit_generator(generator=sp.train_set,
+                                    steps_per_epoch=sp.train_set.n//sp.train_set.batch_size,
                                     epochs=epochs,
-                                    validation_data = test_set,
-                                    validation_steps = test_set.n//test_set.batch_size,
+                                    validation_data = sp.test_set,
+                                    validation_steps = sp.test_set.n//sp.test_set.batch_size,
                                     callbacks=callbacks_list
                                     )
