@@ -1,14 +1,18 @@
 from keras.layers import Dense,Input,Dropout,GlobalAveragePooling2D,Flatten,Conv2D,BatchNormalization,Activation,MaxPooling2D
 from keras.models import Model,Sequential
 from keras.optimizers import Adam,SGD,RMSprop
+import config
 
 
-no_of_classes = 7
+no_of_classes = config.no_of_classes
+
+
+
 
 model = Sequential()
 
 #1st CNN layer
-model.add(Conv2D(64,(3,3),padding = 'same',input_shape = (48,48,1)))
+model.add(Conv2D(64,(3,3),padding = 'same',input_shape = (config.picture_size,config.picture_size,1)))
 model.add(BatchNormalization())
 model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size = (2,2)))
@@ -50,9 +54,9 @@ model.add(BatchNormalization())
 model.add(Activation('relu'))
 model.add(Dropout(0.25))
 
-model.add(Dense(no_of_classes, activation='softmax'))
+model.add(Dense(config.no_of_classes, activation='softmax'))
 
 
 
-opt = Adam(lr = 0.0001)
+opt = Adam(lr = config.learning_rate)
 model.compile(optimizer=opt,loss='categorical_crossentropy', metrics=['accuracy'])

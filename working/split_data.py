@@ -1,12 +1,13 @@
 from keras.preprocessing.image import ImageDataGenerator
+import config
 
 
-picture_size = 48
-folder_path = "../data/images/images/"
+picture_size = config.picture_size
+folder_path = config.folder_path
 
 
 
-batch_size  = 128
+batch_size  = config.batch_size
 
 datagen_train  = ImageDataGenerator()
 datagen_val = ImageDataGenerator()
