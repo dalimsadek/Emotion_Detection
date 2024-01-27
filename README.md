@@ -35,6 +35,12 @@ The project structure is organized into the following folders:
    ```bash
     python main.py
 
+4. Run the necessary scripts according to your needs:
+     ```bash
+    python dependecies.py
+    python split_data.py
+    python train.py
+    python test.py
 ## Contributing
 If you're interested in contributing to the project or have suggestions, feel free to create issues or submit pull requests.
 
