@@ -18,7 +18,7 @@ The project structure is organized into the following folders:
   - `dependencies.py`: File containing project dependencies.
   - `model.py`: File defining the architecture of the CNN model.
   - `split_data.py`: File implementing data splitting strategies.
-  - `test.py`: File the performance of the model on the test data.
+  - `test.py`: File shows the performance of the model on the test data.
   - `train.py`: File handling model training.
   - `main.py`: Main executable file to run the Emotion Detection system.
 
