@@ -31,13 +31,16 @@ The project structure is organized into the following folders:
 2. Navigate to the project directory:
    ```bash
     cd Emotion_Detection
-3. Run the main script:
+3. install dependecies:
+   ```bash
+    pip install -r requirements.txt
+
+4. Run the main script:
    ```bash
     python main.py
 
-4. Run the necessary scripts according to your needs:
+5. Run the necessary scripts according to your needs:
      ```bash
-    python dependecies.py
     python split_data.py
     python train.py
     python test.py
